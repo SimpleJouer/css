@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>css hack</title>
+    <style>
+        /*
+        解决IE6 7 8的兼容性问题
+        1）条件注释法
+        <!--[if 条件]>
+
+        <![endif]-->
+
+        2）属性前缀和后缀
+        前缀  + - _ * #
+        后缀 \0   \9   \9\0  !important（优先级最高）
+
+
+        */
+        body{
+            background-color: red;
+            color: #fff !important;
+            color: green;
+        }
+    </style>
+    <!--[if IE 7]>
+    <style>
+        body{
+            background-color: green;
+        }
+    </style>
+    <![endif]-->
+
+</head>
+<body>
+<!--  注释的内容   -->
+
+哈哈哈哈哈哈哈
+
+<!--[if IE 7]>
+啊啊啊啊啊啊啊啊啊
+<![endif]-->
+
+</body>
+</html>

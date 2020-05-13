@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹性盒</title>
+    <style>
+        /*
+        3、弹性盒模型  伸缩和模型  flex box
+        在弹性盒中float和clear不生效
+
+        1）作用
+        适应不同的屏幕大小
+        多用于移动端布局
+
+        2）父元素上的属性
+        1、开启弹性盒
+        display:flex;
+        开启弹性盒后，子元素默认水平排列
+
+        2、弹性盒的方向
+        flex-direction:row|column|column-reverse|row-reverse;
+        row:默认值  子元素水平排列
+        column：子元素垂直排列
+        row-reverse：子元素在水平方向倒序排列
+        column-reverse：子元素在垂直方向上倒序排列
+
+        3、设置子元素在主轴的对齐方式
+        默认x轴为主轴，y轴为侧轴
+        当flex-direction:column;时，y轴为主轴，x轴为侧轴
+
+        justify-content:flex-start|flex-end|center|space-around|space-between ;
+
+        flex-start:默认值  弹性盒的开始
+        flex-end：弹性盒结束
+        center：居中
+        space-around：两侧是中间距离的一半
+        space-between：在子元素之间平均分配父元素剩下的空间，左右两端没有距离
+
+        4、子元素在侧轴的对齐方式
+        align-items:flex-start|flex-end|center;
+
+
+        3）子元素上的属性
+        flex-grow:number;
+        设置子元素宽度之间的比例
+
+
+        */
+        .box{
+            height: 600px;
+            background-color: deepskyblue;
+            /*开启弹性盒*/
+            display: flex;
+
+            /*弹性盒的方向  设置子元素在父元素上排列的方向*/
+            /*flex-direction: column;*/
+
+            /*设置子元素在主轴的对齐方式*/
+            /*justify-content:space-between ;*/
+
+            /*设置子元素在侧轴的对齐方式*/
+            /*align-items: flex-end;*/
+
+
+
+        }
+        .one,.two,.three{
+            height: 200px;
+            /*flex-grow: 1;*/
+        }
+        .one{
+            background-color: palegreen;
+            flex-grow: 1;
+        }
+        .two{
+            background-color: palevioletred;
+            flex-grow: 3;
+        }
+        .three{
+            background-color: palegoldenrod;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div>
+
+
+
+
+
+</body>
+</html>

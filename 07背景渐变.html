@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>背景渐变</title>
+    <style>
+        /*
+        1、线性渐变
+         background: linear-gradient(方向,颜色1,颜色2,...)
+         方向默认从上往下  to bottom
+         例如：to right   、  to  right  bottom
+               deg:弧度
+         background: linear-gradient(120deg,#ff910e,#ffd037);
+
+         2、射线渐变  径向渐变   扇形渐变
+         background: -webkit-radial-gradient(渐变的中心点,渐变的形状,颜色1,颜色2,...)
+         默认的渐变中心点在宽高的一半
+         默认的渐变形状为椭圆
+
+        */
+        .box{
+            width: 1000px;
+            height: 500px;
+            border: 2px solid #000;
+            /*border-radius: 50%;*/
+            /*background: linear-gradient(to right bottom,#ff910e,#ffd037,#ff3149,#ff64a6);*/
+            /*background: linear-gradient(120deg,#ff910e,#ffd037);*/
+            
+            background: -webkit-radial-gradient(left top,circle,red,orangered,yellow,green);
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

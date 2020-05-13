@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>圆角</title>
+    <style>
+        /*
+        1、圆角
+        border-radius:;
+        取值px   %
+        取值1-4个
+        取一个值  四个角
+        取两个值  左上角、右下角    右上角、左下角
+        取三个值  左上角   右上角、左下角   右下角
+        取四个值  从左上角开始，顺时针旋转
+
+        画圆  border-radius:50%;
+
+        2、盒阴影
+        box-shadow:水平方向的位置  垂直方向的位置  模糊度  尺寸  颜色  位置;
+                        必须            必须        可选   可选  可选  可选
+                        正负            正负        正值   正负         outset|inset
+
+
+        例子：
+        1）单个方向
+        box-shadow: 0 10px 30px gold;
+        2）四个方向
+        box-shadow: 0 0 30px gold inset;
+
+        3、字阴影
+        text-shadow:水平方向的位置  垂直方向的位置  模糊度  颜色;
+                         必须            必须        可选   可选
+                         正负            正负        正值
+
+
+
+        */
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 3px solid red;
+            /*border-radius: 10px 20px 30px 40px;*/
+            /*border-radius: 50%;*/
+            /*border-radius: 150px;*/
+            margin: 50px;
+
+            /*box-shadow: 10px 10px 30px 10px gold inset;*/
+
+            font-size: 24px;
+            text-align: center;
+            line-height: 300px;
+            font-weight: bold;
+
+            text-shadow: 10px -10px 5px gold;
+
+
+        }
+        .box:hover{
+            box-shadow: 0 0 30px 10px gold inset;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    哈哈哈哈
+</div>
+</body>
+</html>
